@@ -1,10 +1,26 @@
 <!doctype html>
 <html>
     <head>
-        <script type="module" src='JW_Player.js'/>
+        
         <link rel="stylesheet" type="text/css" href="player.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="./css/fonts/Lexend Exa/css.css" rel="stylesheet">
+        <script type="text/javascript" src="JW_Player.js"></script>
+        <script>
+            window.onload = ()=>{
+                let player = new JW_Player("container_1", 400, 400);
+                player.setAutoplay(true);
+                player.load("https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4");
+                player.addButtons();
+            }
+        </script>
     </head>
     <body>
-
+        <div id="container_1">
+            
+        </div>
+        <div id="container_2">
+            
+        </div>
     </body>
 </html>
